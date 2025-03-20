@@ -1,0 +1,27 @@
+[project]
+name = "arch-server-install"
+version = "0.1.0"
+description = "Install a clean arch server"
+readme = "README.md"
+requires-python = ">=3.13"
+classifiers = ["Private :: Do Not Upload"]
+dependencies = [
+    "sh>=2.1.0",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ipython>=8.30.0",
+    "pdbpp>=0.10.3",
+    "pytest>=8.3.4",
+    "ruff>=0.8.2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
